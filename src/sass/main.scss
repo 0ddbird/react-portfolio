@@ -1,0 +1,9 @@
+@use './core/' as core;
+@use './layout/' as layout;
+@use './components/' as components;
+@use './sections/' as sections;
+
+html, body {
+  height: 100%;
+  width: 100%;
+}

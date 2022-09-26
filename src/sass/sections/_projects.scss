@@ -1,0 +1,80 @@
+@use '../abstract/' as a;
+
+/* ----------- Rows ----------- */
+
+.table {
+  margin: 50px 0;
+}
+
+.table-headings {
+  display: none;
+  color: a.$clr-secondary;
+  font-weight: 700;
+  margin-bottom: 20px;
+  @include a.mq-481 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @include a.mq-961 {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+.project {
+  &:hover {
+    background-color: a.$clr-backgroundlight;
+  }
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
+  @include a.mq-481 {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include a.mq-961 {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+/* ----------- Project Headings -----------*/
+
+#heading-project {
+
+}
+
+#heading-techs {
+  display: none;
+  @include a.mq-481 {
+    display: block;
+  }
+}
+
+#heading-themes {
+  display: none;
+  @include a.mq-961 {
+    display: block;
+  }
+}
+
+
+/* ----------- Cells -----------*/
+.project-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.project-techs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.project-themes {
+  display: none;
+  @include a.mq-961 {
+    display: flex;
+    align-items: center;
+  }
+}

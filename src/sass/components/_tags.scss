@@ -1,0 +1,60 @@
+@use '../abstract/' as a;
+
+.theme {
+  background-color: a.$clr-backgroundlight;
+}
+
+.tag {
+  font-size: .80em;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 0 5px 5px 0;
+}
+
+.html {
+  background-color: #d25836;
+}
+
+.css {
+  background-color: #246baa;
+}
+
+.javascript {
+  background-color: #f7df1e;
+  color: black;
+}
+
+.sass {
+  background-color: #cd669a;
+}
+
+.react {
+  background-color: #61dafb;
+  color: black;
+}
+
+.typescript {
+  background-color: #3178c6;
+}
+
+.redux {
+  background-color: #764abc;
+}
+
+.git {
+  background-color: #f43425;
+}
+
+.jest {
+  background-color: #99425b;
+}
+
+.node {
+  background-color: #549e45;
+}
+
+.recharts, .lighthouse {
+  background-color: #65717a;
+}
+

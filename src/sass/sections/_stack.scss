@@ -1,0 +1,52 @@
+#stack {
+  height: 90vh;
+}
+
+.stack-list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.stack-list {
+  margin: 100px 0;
+  @for $i from 1 through 11 {
+    & .stack-list-tech:nth-child(#{$i}n) {
+        animation: SlideDown .75s forwards ease;
+        animation-delay: #{$i * 0.20}s;
+    }
+  }
+}
+
+.stack-list-tech {
+  padding-left: 25px;
+  position: relative;
+  opacity: 0;
+
+  &::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    bottom: 10px;
+    right: 0;
+    border-left: 2px solid white;
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 20px;
+    border-bottom: 2px solid white;
+  }
+}
+
+@keyframes SlideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

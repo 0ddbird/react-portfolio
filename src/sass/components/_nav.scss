@@ -1,0 +1,113 @@
+@use '../abstract/' as a;
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  background-color: a.$clr-background;
+  z-index: 1;
+}
+
+#home-link {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#home-link-slash {
+
+}
+
+#home-link-text {
+  color: a.$clr-secondary;
+}
+
+#home-link-underscore {
+  animation: Blink .75s alternate-reverse infinite;
+}
+
+#contact-email {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@keyframes Blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  & img {
+    height: 12px;
+    width: 12px;
+    @include a.mq-320 {
+      height: 14px;
+      width: 14px;
+    }
+  
+    @include a.mq-481 {
+      height: 16px;
+      width: 16px;
+    }
+    
+    @include a.mq-641 {
+      height: 20px;
+      width: 20px;
+    }
+  
+    @include a.mq-961 {
+      height: 24px;
+      width: 24px;
+    }
+    
+  }
+}
+
+.navlinks {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 35px 0 35px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  @for $i from 1 through 4 {
+    & .navlink:nth-child(#{$i}n) {
+        animation: SlideLeft .5s forwards ease;
+        animation-delay: #{$i * 0.20}s;
+    }
+  }
+}
+
+.navlink {
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: .15em .25em .15em .5em;
+  background-color: a.$clr-backgroundlight;
+  transform: translateX(200px);
+  width: 5em;
+  &:hover {
+    color: a.$clr-secondary;
+  }
+}
+
+@keyframes SlideLeft {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0)
+  }
+}

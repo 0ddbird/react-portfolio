@@ -1,0 +1,10 @@
+@use '../abstract/' as a;
+
+body {
+  background-color: a.$clr-background;
+  color: white;
+}
+
+.main-section {
+  padding-top: 35px;
+}
