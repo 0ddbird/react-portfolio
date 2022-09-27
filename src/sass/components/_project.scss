@@ -7,8 +7,13 @@
   position: relative;
   margin-top: 1em;
   border-radius: 2px;
+  
   &:hover {
-    background-color: a.$clr-backgroundlight;
+    background-color: a.$clr-secondary;
+    & .project-title {
+      color: a.$clr-background;
+    }
+    
   }
   
   @include a.mq-481 {
@@ -23,9 +28,6 @@
       color: a.$clr-background;
     }
     background-color: a.$clr-secondary;
-    &:hover {
-      background-color: a.$clr-secondary;
-    }
   }
 }
 
