@@ -1,9 +1,54 @@
+@use '../abstract/' as a;
+
 .project-details {
+  @include a.mq-481 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  
+  padding: 25px 10px;
   max-height: 0;
   opacity: 0;
-  animation: Expand 1s ease-in-out forwards;
+  animation: Expand 1.5s ease-in-out forwards;
+  background-color: a.$clr-backgroundlight;
+  border-bottom: 2px solid a.$clr-secondary;
+}
+
+.project-details-goal {
 
 }
+
+.project-goal-description {
+
+  & a {
+    color: a.$clr-secondary;
+  }
+}
+
+.project-details-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  @include a.mq-481 {
+    padding-left: 1em;
+    border-left: 2px solid a.$clr-secondary;
+  }
+  
+}
+
+.project-details-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    color: a.$clr-secondary;
+  }
+  & img {
+    height: 1em;
+    margin-right: .5em;
+  }
+}
+
 
 @keyframes Expand {
   from {

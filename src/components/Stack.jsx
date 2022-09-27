@@ -1,27 +1,35 @@
 import React from 'react'
+import { InView } from 'react-intersection-observer'
+import { v4 as uuidv4 } from 'uuid'
 
 const Stack = () => {
-  return (
-  <section id='stack' className='main-section'>
-    <h1 className="section-heading">Technical stack</h1>
-    <span className="section-subheading">I&apos;ve been training on</span>
-    <div className='stack-list-wrapper'>
-      <ul className="stack-list">
-          <li className="stack-list-tech">JavaScript</li>
-          <li className="stack-list-tech">TypeScript</li>
-          <li className="stack-list-tech">HTML</li>
-          <li className="stack-list-tech">CSS</li>
-          <li className="stack-list-tech">PHP</li>
-          <li className="stack-list-tech">SQL</li>
-          <li className="stack-list-tech">React</li>
-          <li className="stack-list-tech">Redux</li>
-          <li className="stack-list-tech">Jest</li>
-          <li className="stack-list-tech">Sass</li>
-          <li className="stack-list-tech">Git</li>
-        </ul>
-    </div>
+  const techs = ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'PHP', 'SQL', 'React', 'Redux', 'Jest', 'Sass', 'Git']
 
-  </section>)
+  return (
+    <section id='stack' className='main-section'>
+      <h1 className="section-heading">Technical stack</h1>
+      <span className="section-subheading">I&apos;ve been training on</span>
+      <div className='stack-list-wrapper'>
+        <ul className='stack-list'>
+          {
+          techs.map(tech => {
+            return (
+              <InView key={uuidv4()} triggerOnce={true} rootMargin={'-50px'} >
+              {
+                ({ inView, ref, entry }) => {
+                  return (
+                    <li ref={ref} className={inView ? 'stack-list-tech visible' : 'stack-list-tech'}>{tech}</li>
+                  )
+                }
+              }
+              </InView>
+            )
+          })
+        }
+        </ul>
+      </div>
+    </section>
+  )
 }
 
 export default Stack

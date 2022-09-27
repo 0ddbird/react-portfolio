@@ -33,6 +33,16 @@
   @include a.mq-961 {
     grid-template-columns: 1fr 1fr 2fr;
   }
+
+  &.active-project {
+    & .project-title {
+      color: a.$clr-background;
+    }
+    background-color: a.$clr-secondary;
+    &:hover {
+      background-color: a.$clr-secondary;
+    }
+  }
 }
 
 /* ----------- Project Headings -----------*/

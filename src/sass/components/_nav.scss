@@ -85,8 +85,8 @@ nav {
   overflow: hidden;
   @for $i from 1 through 4 {
     & .navlink:nth-child(#{$i}n) {
-        animation: SlideLeft .5s forwards ease;
-        animation-delay: #{$i * 0.20}s;
+        animation: SlideLeft .25s forwards ease;
+        animation-delay: #{$i * 0.10}s;
     }
   }
 }
@@ -98,7 +98,9 @@ nav {
   background-color: a.$clr-backgroundlight;
   transform: translateX(200px);
   width: 5em;
+  border-left: 2px solid a.$clr-backgroundlight;
   &:hover {
+    border-left: 2px solid a.$clr-secondary;
     color: a.$clr-secondary;
   }
 }

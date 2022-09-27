@@ -1,0 +1,6 @@
+@for $i from 1 through 11 {
+  & .stack-list-tech:nth-child(#{$i}n) {
+      animation: SlideDown .75s forwards ease;
+      animation-delay: #{$i * 0.15}s;
+  }
+}

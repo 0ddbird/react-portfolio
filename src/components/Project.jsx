@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { v4 as uuidv4 } from 'uuid'
+import GitHubIcon from '../assets/github-icon.svg'
+import DiagramIcon from '../assets/diagram-project-solid.svg'
 
 const Project = ({ project }) => {
   const [isFocused, setIsFocused] = useState(false)
-  function handleProjectClick (id) {
-    console.log(id)
-    setIsFocused(!isFocused)
-  }
+
   return (
     <>
-      <article className='project' onClick={() => handleProjectClick(project.id)}>
+      <article className={isFocused ? 'project active-project' : 'project'} onClick={() => setIsFocused(!isFocused)}>
         <h1 className='project-title'>{project.title}</h1>
         <ul className='project-techs'>
           {
@@ -29,9 +28,17 @@ const Project = ({ project }) => {
     </article>
     {
       isFocused &&
-      <aside className='project-details'>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci magnam nesciunt voluptas culpa explicabo illum. Iusto distinctio laboriosam labore officia voluptatum nobis numquam alias sequi optio beatae, quidem, deserunt commodi dolorem? Commodi facilis eveniet nobis magni mollitia velit at voluptate reprehenderit odit molestiae quis repellendus aliquam ducimus, suscipit modi corrupti atque debitis! Cumque exercitationem fugit minima maxime cupiditate doloribus dolores necessitatibus, et magni tempore enim tenetur temporibus excepturi maiores veritatis, quis distinctio, assumenda fugiat! Sit, cumque. Nemo saepe harum dolorum molestiae quis, laudantium illum facilis quasi sequi adipisci veniam inventore sed, est, dolor laborum porro iure. Reprehenderit eum nobis inventore.
-      </aside>
+      <section className='project-details'>
+        <div className='project-details-goal'>
+          <h2 className='project-goal-title'>Details</h2>
+          <p className='project-goal-description'>{project.description}</p>
+        </div>
+        <div className='project-details-links'>
+          <h2 className='project-links-title'>Links</h2>
+          <a className='project-details-link' href={project.github} target="_blank" rel="noopener noreferrer"><img src={GitHubIcon} alt='github'/>Github repository</a>
+          <a className='project-details-link' href={project.whimsical} target="_blank" rel="noopener noreferrer"><img src={DiagramIcon} alt='diagram'/>Project diagram</a>
+        </div>
+      </section>
     }
 
     </>

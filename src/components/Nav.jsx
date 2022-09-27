@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import OpenIcon from '../assets/bars-solid.svg'
+import CloseIcon from '../assets/xmark-solid.svg'
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false)
-
+  const icon = menuOpen ? CloseIcon : OpenIcon
   return (
   <nav>
     <Link to='welcome' smooth={true} id='home-link'>
@@ -14,7 +15,9 @@ const Nav = () => {
     <span id='home-link-underscore'>_</span>
     </Link>
     <span id='contact-email'>contact@giacomo-llinares.com</span>
-    <button className="nav-button" id="nav-open-button" onClick={() => setMenuOpen(!menuOpen)}><img src={OpenIcon} alt="menu"/></button>
+    <button className="nav-button" id="nav-open-button" onClick={() => setMenuOpen(!menuOpen)}>
+    <img src={icon} alt="menu"/>
+    </button>
     {
       menuOpen &&
       <div className='navlinks'>
