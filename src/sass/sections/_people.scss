@@ -1,0 +1,52 @@
+@use '../abstract/' as a;
+
+#people {
+  height: 100vh;
+}
+
+.people-wrapper {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px 10%;
+  @include a.mq-641 {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include a.mq-961 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.reference-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reference-profile-pic {
+  height: 5em;
+  border-radius: 50%;
+}
+
+.reference-name {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.reference-job {
+  font-size: 1.25em;
+  &-position {
+    color: white;
+  }
+
+  &-company {
+    font-style: italic;
+  }
+}
+
+.reference-testimonial {
+  font-size: .75em;
+  text-align: center;
+  font-style: italic;
+}

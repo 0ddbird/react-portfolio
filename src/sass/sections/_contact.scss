@@ -1,0 +1,61 @@
+@use '../abstract/' as a;
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-form {
+  margin: 50px 0;
+  width: 50%;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-email-label {
+  font-weight: 700;
+  color: a.$clr-secondary;
+}
+
+#form-message-label {
+  font-weight: 700;
+  color: a.$clr-secondary;
+}
+
+#form-email {
+  border-radius: 5px;
+  border: none;
+  background-color: a.$clr-backgroundlight;
+  color: white;
+  margin-bottom: 1em;
+  &:focus {
+    outline: 2px solid a.$clr-secondary;
+  }
+}
+
+#form-message {
+  border-radius: 5px;
+  border: none;
+  background-color: a.$clr-backgroundlight;
+  color: white;
+  &:focus {
+    outline: 2px solid a.$clr-secondary;
+  }
+}
+
+.form-button-wrapper {
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#form-submit-button {
+  border: none;
+  background: none;
+  background-color: a.$clr-secondary;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

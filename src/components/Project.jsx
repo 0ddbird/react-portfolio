@@ -35,14 +35,13 @@ const Project = ({ project }) => {
         </div>
         <div className='project-details-links'>
           <h2 className='project-links-title'>Links</h2>
-          <a className='project-details-link' href={project.github} target="_blank" rel="noopener noreferrer"><img src={GitHubIcon} alt='github'/>Github repository</a>
-          <a className='project-details-link' href={project.whimsical} target="_blank" rel="noopener noreferrer"><img src={DiagramIcon} alt='diagram'/>Project diagram</a>
+          <a className='project-details-link' href={project.github} target="_blank" rel="noopener noreferrer"><img src={GitHubIcon} alt='github'/>Repository</a>
+          { project.diagram && <a className='project-details-link' href={project.diagram} target="_blank" rel="noopener noreferrer"><img src={DiagramIcon} alt='diagram'/>Diagram</a> }
+          { project.logigram && <a className='project-details-link' href={project.logigram} target="_blank" rel="noopener noreferrer"><img src={DiagramIcon} alt='diagram'/>Logigram</a>}
         </div>
       </section>
     }
-
     </>
-
   )
 }
 

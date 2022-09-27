@@ -6,7 +6,6 @@ const projects = [
     title: 'Booki',
     techs: ['Git', 'HTML', 'CSS'],
     themes: ['HTML/CSS fundamentals', 'Responsivity'],
-    tags: ['Responsivity'],
     github: 'https://github.com/Okuspo/Booki',
     description: (
       <>
@@ -26,8 +25,7 @@ const projects = [
     title: 'Oh My Food',
     techs: ['Git', 'HTML', 'Sass'],
     themes: ['Sass', 'CSS Animations'],
-    tags: ['Intro to Sass', 'BEM'],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P3_Ohmyfood',
     description: (
       <>
         This project aimed at teaching CSS animations and Sass with a mobile-first approach, but also good practices such as the BEM methodology and the 7-1 Sass folder structure.
@@ -40,8 +38,8 @@ const projects = [
     title: 'GameOn',
     techs: ['Git', 'HTML', 'JavaScript', 'TypeScript'],
     themes: ['Intro to JavaScript', 'DOM manipulation', 'Input validation'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/P4_GameOn_TS',
+    diagram: 'https://whimsical.com/p4-gameon-JnY4Bf93Nx96scT1XrZ3vf',
     description: (
       <>
         This project had me to build a form input validation script.
@@ -56,8 +54,8 @@ const projects = [
     title: 'FishEye',
     techs: ['Git', 'HTML', 'Sass'],
     themes: ['Dynamic content', 'Design patterns', 'Accessibility'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P6_Fisheye',
+    diagram: 'https://whimsical.com/p6-v4-PtWt93VBERWdH3PrCxM4Ey',
     description: (
       <>
         This one was a tough and thrilling project.
@@ -80,8 +78,9 @@ const projects = [
     title: 'Les Petits Plats',
     techs: ['Git', 'HTML', 'Sass', 'JavaScript'],
     themes: ['Algorithms', 'Performance benchmarks'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P7_Les_petits_plats',
+    diagram: 'https://whimsical.com/p7-les-petits-plats-logigramme-W6cBsyYcQSZ8L751F5CXtD',
+    logigram: 'https://whimsical.com/p7-algo-L1NiK2h7DHXpF2PDbbBuiX',
     description: (
       <>
         <i>What are we having for dinner tonight?</i>
@@ -97,8 +96,8 @@ const projects = [
     title: 'Billed',
     techs: ['Git', 'JavaScript', 'Jest', 'Node'],
     themes: ['Debugging', 'Testing'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P9_Billed',
+    diagram: 'https://whimsical.com/p9-billed-front-map-9Cdr8mQDUPCnAtBLs5BkWr',
     description: (
       <>
         For this project, a codebase with a front-end app and a back-end NodeJS server was given.
@@ -115,8 +114,7 @@ const projects = [
     title: 'Kasa',
     techs: ['Git', 'Sass', 'React', 'TypeScript'],
     themes: ['Intro to React', 'Dynamic Routing'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P11_Kasa',
     description: (
       <>
         For this first React project, I was asked to build an AirBnB-like application, based on Json data.
@@ -130,8 +128,8 @@ const projects = [
     title: 'SportSee',
     techs: ['Git', 'Sass', 'React', 'TypeScript', 'Recharts', 'Node'],
     themes: ['Graphs', 'External lib', 'API requests'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P12_Sportsee',
+    diagram: 'https://whimsical.com/p12-sportsee-SXM1EPyjwSGJbbSs7gxDFQ',
     description: (
       <>
         In order to build this project, I had to make API requests to a provided back-end and use the Recharts library to make graphs.
@@ -146,8 +144,8 @@ const projects = [
     title: 'ArgentBank',
     techs: ['Git', 'Sass', 'React', 'Redux', 'Node'],
     themes: ['API requests', 'Redux store', 'JSDoc'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P13_ArgentBank',
+    diagram: 'https://whimsical.com/p13-argentbank-UA4DHcxfiPnT2KLcr4ySxx',
     description: (
       <>
         The main goal of this project was about using Redux to create a global context for a banking application.
@@ -165,8 +163,7 @@ const projects = [
     title: 'HRNet',
     techs: ['Git', 'Sass', 'React', 'Lighthouse'],
     themes: ['Stateless component design', 'NPM lib publication'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/OC_P14_HRNet',
     description: (
       <>
         For this project I was given a jQuery application, made with 4 dependencies:
@@ -187,8 +184,7 @@ const projects = [
     title: 'React Quizz',
     techs: ['Git', 'Sass', 'React'],
     themes: ['Personal project', 'Quizz', 'Question templates', 'Audio questions'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/ReactQuizz',
     description: (
       <>
         This one has a little story behind it!
@@ -206,11 +202,10 @@ const projects = [
     title: 'Tambouille',
     techs: ['Git', 'Sass', 'React', 'TypeScript', 'Node'],
     themes: ['Personal project', 'Search algorithm', 'Recipes suggestion'],
-    tags: [''],
-    github: '#',
+    github: 'https://github.com/Okuspo/tambouille',
     description: (
       <>
-        If you have ever wondered what you can cook with ingredients you only have, <i>Tambouille</i> is for you.
+        If you ever wondered what you can cook with ingredients you only have, <i>Tambouille</i> is for you.
         <br/>I made this app to learn how to make a NodeJS/Express server, before I was given examples from my training courses.
         <br/>This app gives you access to a list of ingredients available on the market by season, let you fill in the ingredients you have in your fridge, and suggest recipies based on what you have at your disposal only.
       </>
