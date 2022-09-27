@@ -6,6 +6,7 @@
   grid-template-columns: 1fr;
   position: relative;
   margin-top: 1em;
+  border-radius: 2px;
   &:hover {
     background-color: a.$clr-backgroundlight;
   }
@@ -49,6 +50,7 @@
   display: flex;
   align-items: center;
   font-size: 1.25em;
+  padding: 0 .5ch;
 }
 
 .project-techs {
@@ -71,7 +73,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  padding: 25px 10px;
+  padding: 1em 1em;
   max-height: 0;
   opacity: 0;
   animation: Expand .5s ease-in-out forwards;

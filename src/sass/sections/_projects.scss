@@ -22,6 +22,10 @@
 
 /* ----------- Project Headings -----------*/
 
+#heading-project {
+  padding-left: .5ch;
+}
+
 #heading-techs {
   display: none;
   @include a.mq-481 {
