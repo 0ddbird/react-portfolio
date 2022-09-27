@@ -57,6 +57,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 1ch;
+  @include a.mq-481 {
+    padding: 0;
+  }
 
 }
 
@@ -81,7 +85,15 @@
   border-bottom: 2px solid a.$clr-secondary;
 }
 
+.shrink {
+  animation: Shrink .5s ease-in-out forwards;
+}
 
+.project-details-goal {
+  @include a.mq-481 {
+    padding-right: 1ch;
+  }
+}
 
 .project-goal-description {
 
@@ -95,7 +107,7 @@
   flex-direction: column;
   margin-top: 1em;
   @include a.mq-481 {
-    padding-left: 1em;
+    padding-left: 1ch;
     border-left: 2px solid a.$clr-secondary;
   }
   
