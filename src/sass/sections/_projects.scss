@@ -20,36 +20,7 @@
   }
 }
 
-.project {
-  &:hover {
-    background-color: a.$clr-backgroundlight;
-  }
-  cursor: pointer;
-  display: grid;
-  grid-template-columns: 1fr;
-  @include a.mq-481 {
-    grid-template-columns: 1fr 1fr;
-  }
-  @include a.mq-961 {
-    grid-template-columns: 1fr 1fr 2fr;
-  }
-
-  &.active-project {
-    & .project-title {
-      color: a.$clr-background;
-    }
-    background-color: a.$clr-secondary;
-    &:hover {
-      background-color: a.$clr-secondary;
-    }
-  }
-}
-
 /* ----------- Project Headings -----------*/
-
-#heading-project {
-
-}
 
 #heading-techs {
   display: none;
@@ -66,25 +37,4 @@
 }
 
 
-/* ----------- Cells -----------*/
-.project-title {
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 1.25em;
-}
 
-.project-techs {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-
-}
-
-.project-themes {
-  display: none;
-  @include a.mq-961 {
-    display: flex;
-    align-items: center;
-  }
-}

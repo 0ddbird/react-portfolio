@@ -14,7 +14,7 @@ const Nav = () => {
         <span id='home-link-gt'>&gt;</span>
         <span id='home-link-underscore'>_</span>
       </Link>
-      <span id='contact-email'>contact@giacomo-llinares.com</span>
+      <a href="mailto: contact@giacomo-llinares.com" id='contact-email'>contact@giacomo-llinares.com</a>
       <button className="nav-button" id="nav-open-button" onClick={() => setMenuOpen(!menuOpen)}>
       <img src={icon} alt="menu"/>
       </button>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { v4 as uuidv4 } from 'uuid'
 import GitHubIcon from '../assets/github-icon.svg'
 import DiagramIcon from '../assets/diagram-project-solid.svg'
+import Caret from '../assets/caret.svg'
 
 const Project = ({ project }) => {
   const [isFocused, setIsFocused] = useState(false)
@@ -25,6 +26,8 @@ const Project = ({ project }) => {
             })
           }
         </ul>
+        <img className={isFocused ? 'project-caret-icon up' : 'project-caret-icon'} src={Caret} alt='expand' />
+
     </article>
     {
       isFocused &&

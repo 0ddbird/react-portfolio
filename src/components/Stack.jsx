@@ -8,7 +8,7 @@ const Stack = () => {
   return (
     <section id='stack' className='main-section'>
       <h1 className="section-heading">Technical stack</h1>
-      <span className="section-subheading">I&apos;ve been training on</span>
+      <h2 className="section-subheading">I&apos;ve been training on</h2>
       <div className='stack-list-wrapper'>
         <ul className='stack-list'>
           {

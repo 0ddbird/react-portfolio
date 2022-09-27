@@ -1,22 +1,85 @@
 @use '../abstract/' as a;
 
+.project {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin-top: 1em;
+  &:hover {
+    background-color: a.$clr-backgroundlight;
+  }
+  
+  @include a.mq-481 {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include a.mq-961 {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+
+  &.active-project {
+    & .project-title {
+      color: a.$clr-background;
+    }
+    background-color: a.$clr-secondary;
+    &:hover {
+      background-color: a.$clr-secondary;
+    }
+  }
+}
+
+.project-caret-icon {
+  height: 1em;
+  position: absolute;
+  top: 50%;
+  right: .5em;
+  transform: scale(1) translateY(-50%);
+  transition: transform .25s ease-in-out;
+
+
+  &.up {
+    transform: scale(-1) translateY(50%);
+    transition: transform .25s ease-in-out;
+  }
+}
+
+/* ----------- Cells -----------*/
+.project-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.project-techs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.project-themes {
+  display: none;
+  @include a.mq-961 {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .project-details {
   @include a.mq-481 {
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  
   padding: 25px 10px;
   max-height: 0;
   opacity: 0;
-  animation: Expand 1.5s ease-in-out forwards;
+  animation: Expand .5s ease-in-out forwards;
   background-color: a.$clr-backgroundlight;
   border-bottom: 2px solid a.$clr-secondary;
 }
 
-.project-details-goal {
 
-}
 
 .project-goal-description {
 

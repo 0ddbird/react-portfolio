@@ -85,7 +85,7 @@ const projects = [
       <>
         <i>What are we having for dinner tonight?</i>
         <br /> Well I&apos;m sure you&apos;ll find out really quick if you take a look at this project.
-        The aim was to build a search algorithm for cooking recipies, dealing with multiple criterias &#40;keywords, different types of tags&#41;
+        The aim was to build a search algorithm for cooking recipes, dealing with multiple criterias &#40;keywords, different types of tags&#41;
         I had to make two versions of the algorithm, one using the <i>functional approach</i>, the other using <i>imperative approach</i>, then benchmark the two versions and understand why one would be more performant.
 
       </>
@@ -94,7 +94,7 @@ const projects = [
   {
     id: 5,
     title: 'Billed',
-    techs: ['Git', 'JavaScript', 'Jest', 'Node'],
+    techs: ['Git', 'JavaScript', 'Jest'],
     themes: ['Debugging', 'Testing'],
     github: 'https://github.com/Okuspo/OC_P9_Billed',
     diagram: 'https://whimsical.com/p9-billed-front-map-9Cdr8mQDUPCnAtBLs5BkWr',
@@ -126,7 +126,7 @@ const projects = [
   {
     id: 7,
     title: 'SportSee',
-    techs: ['Git', 'Sass', 'React', 'TypeScript', 'Recharts', 'Node'],
+    techs: ['Git', 'Sass', 'React', 'TypeScript', 'Recharts'],
     themes: ['Graphs', 'External lib', 'API requests'],
     github: 'https://github.com/Okuspo/OC_P12_Sportsee',
     diagram: 'https://whimsical.com/p12-sportsee-SXM1EPyjwSGJbbSs7gxDFQ',
@@ -142,7 +142,7 @@ const projects = [
   {
     id: 8,
     title: 'ArgentBank',
-    techs: ['Git', 'Sass', 'React', 'Redux', 'Node'],
+    techs: ['Git', 'Sass', 'React', 'Redux'],
     themes: ['API requests', 'Redux store', 'JSDoc'],
     github: 'https://github.com/Okuspo/OC_P13_ArgentBank',
     diagram: 'https://whimsical.com/p13-argentbank-UA4DHcxfiPnT2KLcr4ySxx',
@@ -207,7 +207,7 @@ const projects = [
       <>
         If you ever wondered what you can cook with ingredients you only have, <i>Tambouille</i> is for you.
         <br/>I made this app to learn how to make a NodeJS/Express server, before I was given examples from my training courses.
-        <br/>This app gives you access to a list of ingredients available on the market by season, let you fill in the ingredients you have in your fridge, and suggest recipies based on what you have at your disposal only.
+        <br/>This app gives you access to a list of ingredients available on the market by season, let you fill in the ingredients you have in your fridge, and suggest recipes based on what you have at your disposal only.
       </>
     )
   }

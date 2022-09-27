@@ -1,10 +1,21 @@
 @use '../abstract/' as a;
 
 footer {
+  padding: 1em;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  // font-weight: 700;
   background-color: a.$clr-backgroundlight;
-  padding: 20px 0;
+
+  & a {
+    display: flex;
+    align-items: center;
+    margin: 0 .15em;
+    &:hover {
+      color: a.$clr-secondary;
+    }
+    & img {
+      height: 1em;
+      margin-right: 1ch;
+    }
+  }
 }
