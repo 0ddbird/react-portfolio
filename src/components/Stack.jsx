@@ -14,7 +14,7 @@ const Stack = () => {
           {
           techs.map(tech => {
             return (
-              <InView key={uuidv4()} triggerOnce={true} rootMargin={'-50px'} >
+              <InView key={uuidv4()} rootMargin={'-50px'} >
               {
                 ({ inView, ref, entry }) => {
                   return (

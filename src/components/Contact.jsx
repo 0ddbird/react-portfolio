@@ -41,12 +41,9 @@ const Contact = () => {
 
           <label htmlFor='form-email' id='form-email-label'>Email</label>
           <input type='email' id='form-email' required onChange={(e) => setEmail(e.target.value)}></input>
-          <div className='message-label-container'>
-            <label htmlFor='form-message' id='form-message-label'>Message</label>
-            <span className='message-remaining-chars'>Remaining characters : {remainingChars}</span>
-          </div>
-
-          <textarea id='form-message' rows='10' maxLength={textAreaMaxLength} onChange={(e) => handleMessageChange(e)}></textarea>
+          <label htmlFor='form-message' id='form-message-label'>Message</label>
+          <span className='message-remaining-chars'>Remaining characters : <span className='message-remaining-chars-value'>{remainingChars}</span></span>
+          <textarea id='form-message' rows='10' cols='30' maxLength={textAreaMaxLength} onChange={(e) => handleMessageChange(e)}></textarea>
           <p className={isMessageError ? 'message-feedback-error' : 'message-feedback'}>Sorry, your message is too short!</p>
           <div className='form-button-wrapper'>
             <button id='form-submit-button' type="submit">Send</button>

@@ -14,13 +14,14 @@ const Nav = () => {
         <span id='home-link-gt'>&gt;</span>
         <span id='home-link-underscore'>_</span>
       </Link>
-      <a href="mailto: contact@giacomo-llinares.com" id='contact-email'>contact@giacomo-llinares.com</a>
+      {/* <a href="mailto: contact@giacomo-llinares.com" id='contact-email'>contact@giacomo-llinares.com</a> */}
       <button className="nav-button" id="nav-open-button" onClick={() => setMenuOpen(!menuOpen)}>
       <img src={icon} alt="menu"/>
       </button>
       {
         menuOpen &&
         <div className='navlinks'>
+          <Link className='navlink' to='welcome' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/home</Link>
           <Link className='navlink' to='stack' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/stack</Link>
           <Link className='navlink' to='projects' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/projects</Link>
           {/* <Link className='navlink' to='people' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/people</Link> */}

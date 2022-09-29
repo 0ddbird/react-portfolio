@@ -7,23 +7,13 @@
 
 #contact-form {
   margin: 50px 0;
-  width: 50%;
-  max-width: 750px;
   display: flex;
   flex-direction: column;
 }
 
+/* Email */
+
 #form-email-label {
-  font-weight: 700;
-  color: a.$clr-secondary;
-}
-
-.message-label-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#form-message-label {
   font-weight: 700;
   color: a.$clr-secondary;
 }
@@ -40,6 +30,21 @@
   }
 }
 
+/* Message */
+#form-message-label {
+  font-weight: 700;
+  color: a.$clr-secondary;
+}
+
+.message-remaining-chars {
+  font-size: .65em;
+
+  &-value {
+    font-size: 1em;
+    color: a.$clr-secondary;
+  }
+}
+
 #form-message {
   padding: 1ch;
   border-radius: 5px;
@@ -53,14 +58,15 @@
 
 .message-feedback {
   display: none;
+  
+  &-error {
+    display: block;
+    color: a.$clr-error;
+    text-align: end;
+  }
 }
 
-.message-feedback-error {
-  display: block;
-  color: a.$clr-error;
-  text-align: end;
-}
-
+/* Submit button */
 .form-button-wrapper {
   margin-top: 1em;
   display: flex;
