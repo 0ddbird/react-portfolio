@@ -36,7 +36,7 @@ const projects = [
   {
     id: 2,
     title: 'GameOn',
-    techs: ['Git', 'HTML', 'JavaScript', 'TypeScript'],
+    techs: ['Git', 'HTML', 'TypeScript'],
     themes: ['Intro to JavaScript', 'DOM manipulation', 'Input validation'],
     github: 'https://github.com/Okuspo/P4_GameOn_TS',
     diagram: 'https://whimsical.com/p4-gameon-JnY4Bf93Nx96scT1XrZ3vf',
@@ -52,7 +52,7 @@ const projects = [
   {
     id: 3,
     title: 'FishEye',
-    techs: ['Git', 'HTML', 'Sass'],
+    techs: ['Git', 'HTML', 'Sass', 'JavaScript'],
     themes: ['Dynamic content', 'Design patterns', 'Accessibility'],
     github: 'https://github.com/Okuspo/OC_P6_Fisheye',
     diagram: 'https://whimsical.com/p6-v4-PtWt93VBERWdH3PrCxM4Ey',
@@ -104,7 +104,7 @@ const projects = [
         <br />First, I had to fix a few bugs identified in <i>GitHub Issues</i>
         <br />Then I had to make unit and integration tests with Jest to reach 90% codebase coverage.
         <br /> Finally I wrote an end-to-end test plan made of 15 possible user scenarii.
-        <br />Working on someone else&apos; codebase was a real blast to me, for I discovered syntax I didn&apos;t know at that time.
+        <br />Working on someone else&apos;s codebase was a real blast to me, for I discovered syntax I didn&apos;t know at that time.
         <br /> This also reminded me how code readability is crucial when working on a project.
       </>
     )

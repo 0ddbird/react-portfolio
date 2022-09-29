@@ -23,8 +23,8 @@ const Nav = () => {
         <div className='navlinks'>
           <Link className='navlink' to='stack' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/stack</Link>
           <Link className='navlink' to='projects' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/projects</Link>
-          {/* <Link className='navlink' to='people' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/people</Link>
-          <Link className='navlink' to='contact' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/contact</Link> */}
+          {/* <Link className='navlink' to='people' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/people</Link> */}
+          <Link className='navlink' to='contact' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/contact</Link>
         </div>
       }
     </nav>

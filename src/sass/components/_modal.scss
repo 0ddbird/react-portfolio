@@ -1,0 +1,40 @@
+@use '../abstract/' as a;
+
+.modal-background {
+  @include a.flex-center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.90);
+}
+
+.modal {
+  height: 50%;
+  width: 50%;
+}
+
+.modal-heading {
+  text-align: left;
+}
+
+.modal-body {
+  margin: 1em 0;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  color: white;
+  background-color: a.$clr-secondary;
+  border-radius: 2px;
+  color: black;
+  font-weight: 700;
+  padding: .5ch;
+}
+
+.modal-mailto {
+  font-weight: 700;
+  color: a.$clr-secondary;
+}

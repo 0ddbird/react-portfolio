@@ -8,11 +8,10 @@ body {
 .main-section {
   padding: 35px 1em 0 1em;
   position: relative;
-  &::before {
+    &::before {
     top: 0;
     left: 15%;
     right: 15%;
-    bottom: 0;
     content:'';
     position: absolute;
     border-top: 2px solid a.$clr-backgroundlight;
