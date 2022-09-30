@@ -1,0 +1,15 @@
+@use '../abstract/' as a;
+.social-widget {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 1ch;
+}
+
+.social-widget-link {
+    width: 1em;
+    height: 1em;
+  & img {
+    width: 1em;
+    height: 1em;
+  }
+}

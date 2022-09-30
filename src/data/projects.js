@@ -59,7 +59,7 @@ const projects = [
     themes: ['Dynamic content', 'Design patterns', 'Accessibility'],
     github: 'https://github.com/0ddbird/OC_P6_Fisheye',
     githubPage: 'https://0ddbird.github.io/OC_P6_Fisheye/',
-    diagram: 'https://whimsical.com/p6-v4-PtWt93VBERWdH3PrCxM4Ey',
+    diagram: 'https://whimsical.com/p6-v4-PtWt93VBERWdH3PrCxM4Ey@3CRerdhrAw8SEozk8bAjSLZn',
     description: (
       <>
         This one was a tough and thrilling project.
@@ -84,8 +84,8 @@ const projects = [
     themes: ['Algorithms', 'Performance benchmarks'],
     github: 'https://github.com/0ddbird/OC_P7_Les_petits_plats',
     githubPage: 'https://0ddbird.github.io/OC_P7_Les_petits_plats/',
-    diagram: 'https://whimsical.com/p7-les-petits-plats-logigramme-W6cBsyYcQSZ8L751F5CXtD',
-    logigram: 'https://whimsical.com/p7-algo-L1NiK2h7DHXpF2PDbbBuiX',
+    diagram: 'https://whimsical.com/p7-algo-L1NiK2h7DHXpF2PDbbBuiX',
+    logigram: 'https://whimsical.com/p7-les-petits-plats-logigramme-W6cBsyYcQSZ8L751F5CXtD',
     description: (
       <>
         <i>What are we having for dinner tonight?</i>
@@ -136,7 +136,6 @@ const projects = [
     techs: ['Git', 'Sass', 'React', 'TypeScript', 'Recharts'],
     themes: ['Graphs', 'External lib', 'API requests'],
     github: 'https://github.com/0ddbird/OC_P12_Sportsee',
-    githubPage: 'https://0ddbird.github.io/OC_P12_Sportsee/',
     diagram: 'https://whimsical.com/p12-sportsee-SXM1EPyjwSGJbbSs7gxDFQ',
     description: (
       <>

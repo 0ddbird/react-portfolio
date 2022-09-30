@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import OpenIcon from '../assets/bars-solid.svg'
 import CloseIcon from '../assets/xmark-solid.svg'
+import SocialWidget from './SocialWidget'
 
 const Nav = () => {
   const [responsiveMenuOpen, setResponsiveMenuOpen] = useState(false)
@@ -14,6 +15,7 @@ const Nav = () => {
         <span id='home-link-gt'>&gt;</span>
         <span id='home-link-underscore'>_</span>
       </Link>
+      <SocialWidget />
       {/* <a href="mailto: contact@giacomo-llinares.com" id='contact-email'>contact@giacomo-llinares.com</a> */}
       <button className="nav-button" id="nav-open-button" onClick={() => setResponsiveMenuOpen(!responsiveMenuOpen)}>
         <img src={icon} alt="menu"/>
