@@ -12,7 +12,7 @@ async function postMessage (email, message) {
     })
   }
 
-  const response = await fetch(serverUrl.dev, fetchParams)
+  const response = await fetch(serverUrl.prod, fetchParams)
   return response
 }
 
