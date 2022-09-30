@@ -3,14 +3,14 @@
 /* ----------- Rows ----------- */
 
 .table {
-  margin: 50px 0;
+  margin: 2em 0;
 }
 
 .table-headings {
   display: none;
   color: a.$clr-secondary;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   @include a.mq-481 {
     display: grid;
     grid-template-columns: 1fr 1fr;

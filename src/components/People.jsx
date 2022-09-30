@@ -1,5 +1,4 @@
 import React from 'react'
-import { v4 as uuidv4 } from 'uuid'
 import PeoplePic1 from '../assets/00.jpg'
 import PeoplePic2 from '../assets/01.jpg'
 import PeoplePic3 from '../assets/02.jpg'
@@ -34,9 +33,9 @@ const People = () => {
 
       <div className="people-wrapper">
         {
-          people.map(reference => {
+          people.map((reference, index) => {
             return (
-              <article className='reference-article' key={uuidv4()}>
+              <article className='reference-article' key={`reference-${index}`}>
                 <img className='reference-profile-pic' src={reference.img} alt={`${reference.name} profile picture`}/>
                 <h1 className='reference-name'>{reference.name}</h1>
                 <h2 className='reference-job'>

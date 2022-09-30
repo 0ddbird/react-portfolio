@@ -1,7 +1,6 @@
 import React from 'react'
 import { projects } from '../data/projects'
 import Project from './Project'
-import { v4 as uuidv4 } from 'uuid'
 
 const Projects = () => {
   return (
@@ -16,8 +15,8 @@ const Projects = () => {
         </div>
         <div className='table-content'>
         {
-          projects.map(project => {
-            return <Project project={project} key={uuidv4()}/>
+          projects.map((project, index) => {
+            return <Project project={project} key={`project-${index}`}/>
           })
         }
         </div>

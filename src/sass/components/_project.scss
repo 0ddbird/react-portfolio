@@ -5,23 +5,20 @@
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  margin-top: 1em;
+  margin-top: .5em;
   border-radius: 2px;
   &:hover {
     background-color: a.$clr-secondary;
     & .project-title {
       color: a.$clr-background;
     }
-    
   }
-  
   @include a.mq-481 {
     grid-template-columns: 1fr 1fr;
   }
   @include a.mq-961 {
     grid-template-columns: 1fr 1fr 2fr;
   }
-
   &.active-project {
     border-radius: 2px 2px 0 0;
     & .project-title {

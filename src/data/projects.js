@@ -6,7 +6,8 @@ const projects = [
     title: 'Booki',
     techs: ['Git', 'HTML', 'CSS'],
     themes: ['HTML/CSS fundamentals', 'Responsivity'],
-    github: 'https://github.com/Okuspo/Booki',
+    github: 'https://github.com/0ddbird/OC_P2_Booki',
+    githubPage: 'https://0ddbird.github.io/OC_P2_Booki/',
     description: (
       <>
         The goal of this project was to build a responsive page for mobile, tablet and desktop using HTML and CSS.
@@ -25,7 +26,8 @@ const projects = [
     title: 'Oh My Food',
     techs: ['Git', 'HTML', 'Sass'],
     themes: ['Sass', 'CSS Animations'],
-    github: 'https://github.com/Okuspo/OC_P3_Ohmyfood',
+    github: 'https://github.com/0ddbird/OC_P3_Ohmyfood',
+    githubPage: 'https://0ddbird.github.io/OC_P3_Ohmyfood/',
     description: (
       <>
         This project aimed at teaching CSS animations and Sass with a mobile-first approach, but also good practices such as the BEM methodology and the 7-1 Sass folder structure.
@@ -38,7 +40,8 @@ const projects = [
     title: 'GameOn',
     techs: ['Git', 'HTML', 'TypeScript'],
     themes: ['Intro to JavaScript', 'DOM manipulation', 'Input validation'],
-    github: 'https://github.com/Okuspo/P4_GameOn_TS',
+    github: 'https://github.com/0ddbird/P4_GameOn_TS',
+    githubPage: 'https://0ddbird.github.io/P4_GameOn_TS/',
     diagram: 'https://whimsical.com/p4-gameon-JnY4Bf93Nx96scT1XrZ3vf',
     description: (
       <>
@@ -54,7 +57,8 @@ const projects = [
     title: 'FishEye',
     techs: ['Git', 'HTML', 'Sass', 'JavaScript'],
     themes: ['Dynamic content', 'Design patterns', 'Accessibility'],
-    github: 'https://github.com/Okuspo/OC_P6_Fisheye',
+    github: 'https://github.com/0ddbird/OC_P6_Fisheye',
+    githubPage: 'https://0ddbird.github.io/OC_P6_Fisheye/',
     diagram: 'https://whimsical.com/p6-v4-PtWt93VBERWdH3PrCxM4Ey',
     description: (
       <>
@@ -78,7 +82,8 @@ const projects = [
     title: 'Les Petits Plats',
     techs: ['Git', 'HTML', 'Sass', 'JavaScript'],
     themes: ['Algorithms', 'Performance benchmarks'],
-    github: 'https://github.com/Okuspo/OC_P7_Les_petits_plats',
+    github: 'https://github.com/0ddbird/OC_P7_Les_petits_plats',
+    githubPage: 'https://0ddbird.github.io/OC_P7_Les_petits_plats/',
     diagram: 'https://whimsical.com/p7-les-petits-plats-logigramme-W6cBsyYcQSZ8L751F5CXtD',
     logigram: 'https://whimsical.com/p7-algo-L1NiK2h7DHXpF2PDbbBuiX',
     description: (
@@ -96,7 +101,8 @@ const projects = [
     title: 'Billed',
     techs: ['Git', 'JavaScript', 'Jest'],
     themes: ['Debugging', 'Testing'],
-    github: 'https://github.com/Okuspo/OC_P9_Billed',
+    github: 'https://github.com/0ddbird/OC_P9_Billed',
+    githubPage: '',
     diagram: 'https://whimsical.com/p9-billed-front-map-9Cdr8mQDUPCnAtBLs5BkWr',
     description: (
       <>
@@ -114,7 +120,8 @@ const projects = [
     title: 'Kasa',
     techs: ['Git', 'Sass', 'React', 'TypeScript'],
     themes: ['Intro to React', 'Dynamic Routing'],
-    github: 'https://github.com/Okuspo/OC_P11_Kasa',
+    github: 'https://github.com/0ddbird/OC_P11_Kasa',
+    githubPage: 'https://0ddbird.github.io/OC_P11_Kasa/',
     description: (
       <>
         For this first React project, I was asked to build an AirBnB-like application, based on Json data.
@@ -128,7 +135,8 @@ const projects = [
     title: 'SportSee',
     techs: ['Git', 'Sass', 'React', 'TypeScript', 'Recharts'],
     themes: ['Graphs', 'External lib', 'API requests'],
-    github: 'https://github.com/Okuspo/OC_P12_Sportsee',
+    github: 'https://github.com/0ddbird/OC_P12_Sportsee',
+    githubPage: 'https://0ddbird.github.io/OC_P12_Sportsee/',
     diagram: 'https://whimsical.com/p12-sportsee-SXM1EPyjwSGJbbSs7gxDFQ',
     description: (
       <>
@@ -144,7 +152,8 @@ const projects = [
     title: 'ArgentBank',
     techs: ['Git', 'Sass', 'React', 'Redux'],
     themes: ['API requests', 'Redux store', 'JSDoc'],
-    github: 'https://github.com/Okuspo/OC_P13_ArgentBank',
+    github: 'https://github.com/0ddbird/OC_P13_ArgentBank',
+    githubPage: '',
     diagram: 'https://whimsical.com/p13-argentbank-UA4DHcxfiPnT2KLcr4ySxx',
     description: (
       <>
@@ -163,7 +172,8 @@ const projects = [
     title: 'HRNet',
     techs: ['Git', 'Sass', 'React', 'Lighthouse'],
     themes: ['Stateless component design', 'NPM lib publication'],
-    github: 'https://github.com/Okuspo/OC_P14_HRNet',
+    githubPage: '',
+    github: 'https://github.com/0ddbird/OC_P14_HRNet',
     description: (
       <>
         For this project I was given a jQuery application, made with 4 dependencies:
@@ -184,7 +194,8 @@ const projects = [
     title: 'React Quizz',
     techs: ['Git', 'Sass', 'React'],
     themes: ['Personal project', 'Quizz', 'Question templates', 'Audio questions'],
-    github: 'https://github.com/Okuspo/ReactQuizz',
+    githubPage: 'https://0ddbird.github.io/ReactQuizz/',
+    github: 'https://github.com/0ddbird/ReactQuizz',
     description: (
       <>
         This one has a little story behind it!
@@ -202,7 +213,8 @@ const projects = [
     title: 'Tambouille',
     techs: ['Git', 'Sass', 'React', 'TypeScript', 'Node'],
     themes: ['Personal project', 'Search algorithm', 'Recipes suggestion'],
-    github: 'https://github.com/Okuspo/tambouille',
+    github: 'https://github.com/0ddbird/tambouille',
+    githubPage: '',
     description: (
       <>
         If you ever wondered what you can cook with ingredients you only have, <i>Tambouille</i> is for you.

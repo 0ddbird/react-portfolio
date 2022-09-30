@@ -1,6 +1,5 @@
 import React from 'react'
 import { InView } from 'react-intersection-observer'
-import { v4 as uuidv4 } from 'uuid'
 
 const Stack = () => {
   const techs = ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'PHP', 'SQL', 'React', 'Redux', 'Jest', 'Sass', 'Git']
@@ -12,9 +11,9 @@ const Stack = () => {
       <div className='stack-list-wrapper'>
         <ul className='stack-list'>
           {
-          techs.map(tech => {
+          techs.map((tech, index) => {
             return (
-              <InView key={uuidv4()} rootMargin={'-50px'} >
+              <InView key={`stack-tech-${index}`} rootMargin={'-50px'} >
               {
                 ({ inView, ref, entry }) => {
                   return (

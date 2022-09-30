@@ -8,11 +8,11 @@ async function postMessage (email, message) {
     },
     body: JSON.stringify({
       email,
-      message
+      body: message
     })
   }
 
-  const response = await fetch(serverUrl, fetchParams)
+  const response = await fetch(serverUrl.dev, fetchParams)
   return response
 }
 
