@@ -1,5 +1,4 @@
 import React from 'react'
-import Contact from '../components/Contact'
 import Projects from '../components/Projects'
 
 import Stack from '../components/Stack'
@@ -11,7 +10,6 @@ const Home = () => {
       <Welcome />
       <Stack />
       <Projects />
-      <Contact />
     </>
   )
 }

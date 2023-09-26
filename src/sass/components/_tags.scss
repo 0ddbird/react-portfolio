@@ -54,7 +54,21 @@
   background-color: #549e45;
 }
 
-.recharts, .lighthouse {
+.recharts, .lighthouse, .selectolax, .asyncio, .beautifulsoup, .pyo3, .maturin {
   background-color: #65717a;
 }
 
+
+.python {
+  background: linear-gradient(-75deg, #ffd43b 50%, #3178c6 50%);
+  color: black;
+}
+
+.flask {
+  background-color: #48a4be;
+}
+
+.rust {
+  background-color: #c0411a;
+  color: black;
+}

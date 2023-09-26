@@ -2,12 +2,12 @@ import React from 'react'
 import { InView } from 'react-intersection-observer'
 
 const Stack = () => {
-  const techs = ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'PHP', 'SQL', 'React', 'Redux', 'Jest', 'Sass', 'Git']
+  const techs = ['Python', 'Django', 'JavaScript', 'TypeScript', 'React', 'Redux', 'HTML', 'CSS', 'SQL', 'Sass', 'Git']
 
   return (
     <section id='stack' className='main-section'>
       <h1 className="section-heading">Technical stack</h1>
-      <h2 className="section-subheading">I&apos;ve been training on</h2>
+      <h2 className="section-subheading">I love to work with</h2>
       <div className='stack-list-wrapper'>
         <ul className='stack-list'>
           {

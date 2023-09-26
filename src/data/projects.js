@@ -221,6 +221,51 @@ const projects = [
         <br/>This app gives you access to a list of ingredients available on the market by season, let you fill in the ingredients you have in your fridge, and suggest recipes based on what you have at your disposal only.
       </>
     )
+  },
+  {
+    id: 12,
+    title: 'BookWorm',
+    techs: ['Git', 'Python', 'AsyncIO', 'Selectolax'],
+    themes: ['Web scraping', 'Asynchronous', 'HTML parsing'],
+    github: 'https://github.com/0ddbird/OC_Python_P2',
+    githubPage: '',
+    description: (
+      <>
+        My very first Python project!
+        <br/>The goal was to scrape bookstoscrape.com and extract book data and covers.
+        <br/>I used the asyncio library to make concurrent HTTP requests and learned ANSI codes to make a nice CLI.
+      </>
+    )
+  },
+  {
+    id: 13,
+    title: 'CheckMate',
+    techs: ['Git', 'Python', 'Flask', 'React', 'Sass'],
+    themes: ['REST API', 'MVC', 'Server-side rendering', 'TinyDB'],
+    github: 'https://github.com/0ddbird/OC_Python_P4',
+    githubPage: '',
+    description: (
+      <>
+        An app to manage chess tournaments.
+        <br/>It has a Flask back-end and a React front-end.
+        <br/>I followed the MVC pattern and built DAOs to decouple the DB access from the models.
+      </>
+    )
+  },
+  {
+    id: 14,
+    title: 'Knapsack Solver',
+    techs: ['Git', 'Python', 'Rust', 'Maturin', 'PyO3'],
+    themes: ['Algorithms', 'Python bindings', 'Dynamic Programming', 'Bitwise operators'],
+    github: 'https://github.com/0ddbird/OC_Python_P7',
+    githubPage: '',
+    description: (
+      <>
+        A Python CLI app to solve 0/1 Knapsack problems.
+        <br/>It provides 3 algorithms (Brute force, Greedy and Dynamic Programming)
+        <br/>All of them are also available in Rust through the Python app and run up to 40x faster.
+      </>
+    )
   }
 ]
 

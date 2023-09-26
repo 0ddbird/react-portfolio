@@ -25,7 +25,7 @@ const Nav = () => {
         <Link className={responsiveMenuOpen ? 'navlink-responsive' : 'navlink'} to='stack' smooth={true} onClick={() => setResponsiveMenuOpen(false)}><span className='navlink-slash'>/</span>stack</Link>
         <Link className={responsiveMenuOpen ? 'navlink-responsive' : 'navlink'} to='projects' smooth={true} onClick={() => setResponsiveMenuOpen(false)}><span className='navlink-slash'>/</span>projects</Link>
         {/* <Link className='navlink' to='people' smooth={true} onClick={() => setMenuOpen(!menuOpen)}>/people</Link> */}
-        <Link className={responsiveMenuOpen ? 'navlink-responsive' : 'navlink'} to='contact' smooth={true} onClick={() => setResponsiveMenuOpen(false)}><span className='navlink-slash'>/</span>contact</Link>
+        {/* <Link className={responsiveMenuOpen ? 'navlink-responsive' : 'navlink'} to='contact' smooth={true} onClick={() => setResponsiveMenuOpen(false)}><span className='navlink-slash'>/</span>contact</Link> */}
       </div>
     </nav>
   )
